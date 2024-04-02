@@ -22,6 +22,8 @@ Transductor de entrada ---> Emisor -----------> CANAL ----------> Receptor ---> 
 
 ## CLASIFICACIÓN DE REDES
 
+### ¿Para qué? Para saber cómo montarlas, organizarlas, etc.
+
  **W** ( Wireless [ Puede estar o no ] ) + **X** ( Letra de clasificación ) + **AN** ( Area Network )
 
 - BAN (Body)
