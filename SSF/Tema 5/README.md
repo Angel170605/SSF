@@ -33,7 +33,7 @@ Transductor de entrada ---> Emisor -----------> CANAL ----------> Receptor ---> 
 1. Física
 2. Enlace  --->  Recibe el mensaje y lo manda directamente al que lo debe recibir  [ LLC ] |  Ordena los mensajes para que no se "superpongan" [ MAC (Middle Acces Contorl) ]
 3. Red
-4. a
+4. Transporte
 5. Sesión
 6. Presentación
 7. Aplicación
