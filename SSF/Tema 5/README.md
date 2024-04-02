@@ -4,21 +4,39 @@
 
 ## FUNCIONAMIENTO DE LA RED
 
+### Conexiones
+
 Transductor de entrada ---> Emisor -----------> CANAL ----------> Receptor ---> Transductor de salida
 
-### Tipos de conexiones:
+</div>
 
- #### Guiada (Alámbrica):
+#### Tipos de conexiones:
+
+ ##### Guiada (Alámbrica):
   
   Eléctrico
   
   Óptico
     
- #### No guiada (Inalámbrica)
+ ##### No guiada (Inalámbrica)
 
- Bluthoot
+ Bluethoot
 
-</div>
+#### Capas OSI
+
+- ##### 7 capas independientes
+
+- ##### Clasistas/Racistas/Machistas/Xenófobos ( Sólo hablan con sus iguales )
+
+  ###### Capas en cuestión:
+
+1. Física
+2. Enlace  --->  Recibe el mensaje y lo manda directamente al que lo debe recibir  [ LLC ] |  Ordena los mensajes para que no se "superpongan" [ MAC (Middle Acces Contorl) ]
+3. Red
+4. a
+5. Sesión
+6. Presentación
+7. Aplicación
 
 ## CLASIFICACIÓN DE REDES
 
