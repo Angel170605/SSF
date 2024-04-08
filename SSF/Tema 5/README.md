@@ -2,11 +2,25 @@
   
 # REDES
 
+<img src = "https://www.orbit.es/wp-content/uploads/2019/09/redes-cloud.jpg">
+
 </div>
 
-# FUNCIONAMIENTO DE LA RED
+## CONTENIDOS
 
-## 1. Conexiones
+[1. Conexiones](#conexiones)
+
+[2. Capas OSI](#capasosi)
+
+[3. Clasificación de redes](#clasificacionderedes)
+
+[4. Topología de la red](#topologiadelared)
+
+[5. Canal/Ondas](#ondas)
+
+[6. Cables]
+
+## 1. CONEXIONES <a name="conexiones"></a>
 
 ### ¿Cómo viajan las conexiones?
 
@@ -42,7 +56,7 @@ No guiada (Inalámbrica)
 
 > [Ondas](#ondas)
 
-## 2. Capas OSI
+## 2. CAPAS OSI <a name="capasosi"></a>
 
 ### Características:
 
@@ -78,7 +92,7 @@ No guiada (Inalámbrica)
 
 7. Aplicación
 
-## 3. CLASIFICACIÓN DE REDES
+## 3. CLASIFICACIÓN DE REDES <a name="clasificacionderedes"></a>
 
 ### ¿Para qué? Para saber cómo montarlas, organizarlas, etc.
 
@@ -106,7 +120,7 @@ No guiada (Inalámbrica)
 
 - WAN (Wide)
 
-## 4. TOPOLOGÍA DE LA RED:
+## 4. TOPOLOGÍA DE LA RED <a name = "topologiadelared"></a> :
 
 ### 4.1 TOPOLOGÍA FÍSICA:
 
@@ -174,11 +188,57 @@ Cambiar la freceuncia
 "Cambiar si sube o baja"
 ```
 
+## CABLES
+
+1. UTP [Unshielded Twisted Pair]
+
+> 
+
+2. STP [Shielded Twisted Pair]
+
+> 
+
+3. FTP [Foiled Twisted Pair]
+
+> Enpantallamiento global
+
+### Categorías
+
+3. 10 Mbits/seg. Se usa para telefonía de voz, 10Base-T Ethernet, Token Ring a 4 Mbits/seg.
+
+4. 16 Mbits/seg. Token Ring a 16 Mbits/seg.
+
+5. ª 
+
+===============================================================================================
+
+Ventajas fibra óptica:
+
+- Alcance
+
+- Inmunidad a las interferencias
+
+Tipos de fibra óptica:
+
+<div align = "center">
+
+<img src="https://acf.geeknetic.es/imgw/imagenes/tutoriales/57-3.jpg?f=webp" height="50%" width="50%">
+
+</div>
+
 ## SIGLAS Y DEFINICIONES:
   
 TCP/IP --> "une" Internet (Compueto por muchas redes pequeñas unidas entre sí)
+
 Bits --> Datos a nivel físico
+
 Transductor de entrada --> Convierte cualquier fenómeno físico que se quiera transmitir en electricidad.
+
+
+Galga -> AWG [Medida de gorsor de los cables]
+
+> Cuanto menor es el número, más fino será el cable [Ej: AWG 22 es más delgado que AWG 14]
+
 Transmisor --> Prepara dicha electricidad para que pueda viajar por el cable. **corregir
 
 
