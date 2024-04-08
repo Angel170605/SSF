@@ -40,7 +40,7 @@ No guiada (Inalámbrica)
 
 > Wifi
 
-> [a](#croqueta)
+> [Ondas](#ondas)
 
 ## 2. Capas OSI
 
@@ -134,7 +134,7 @@ No guiada (Inalámbrica)
 
 Es el sistema operativo el que se debe adaptar a los protocolos de la red, dado que estos están diseñados de forma que son iguales en todo el mundo.
 
-## 5. CANAL / ONDAS <a name="croqueta"></a>
+## 5. CANAL / ONDAS <a name="ondas"></a>
 
 ### 5.1 Posibles complicaciones:
 
