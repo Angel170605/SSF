@@ -10,7 +10,7 @@
 #
 ########################################
 
-sudo apt update > /dev/null
+sudo apt-get update > /dev/null
 
 paquete="$1"
 
@@ -57,7 +57,7 @@ else
     if [ -z "$resultados" ]; then
         echo "Lo siento, \"$paquete\" no se encuentra disponible en lso repositorios."
     else
-        echo "Se han encontrados las siguientes coincidencias con "$paquete": :"
+        echo "Se han encontrados las siguientes coincidencias con $paquete: "
         echo "$resultados"
     fi
 fi
