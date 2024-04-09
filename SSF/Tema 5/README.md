@@ -74,9 +74,14 @@ No guiada (Inalámbrica)
 
 > capa de enlace: 2 [Subcapas: [LLC: ][MAC: Evita que haya colisiones][DEFINICIONES: [Dominio de colisión: Son los segmentos en los que todos sus dispositivos pueden chocar entre sí][Nodos: Dispositivos de acceso a la red][Trama: Es el nombre que reciben los datos tratados en esta capa][Entramado: Es la información añadida al  mensaje original  (Destinatario y otras mierdas)]]]
 
-Pon lo de arriba bonito, gandúl
-
 > Recibe el mensaje y lo manda directamente al que lo debe recibir  [ LLC ] |  Ordena los mensajes para que no se "superpongan", para que no "hablen" todos a la vez, sino por turnos [ MAC (Middle Acces Contorl) ]
+
+<div align="center">
+
+## Pon lo de arriba bonito, puto pedazo de vago
+
+</div>
+
 
 3. Red
 
