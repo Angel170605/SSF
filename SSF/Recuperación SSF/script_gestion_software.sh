@@ -14,7 +14,7 @@ sudo apt update > /dev/null
 
 paquete="$1"
 
-while [ -z "$1" ]; do
+while [ -z "$paquete" ]; do
     read -p "Introduzca el nombre del paquete: " paquete
 done
 
