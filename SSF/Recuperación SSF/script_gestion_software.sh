@@ -15,49 +15,49 @@ sudo apt update > /dev/null
 paquete="$1"
 
 while [ -z "$1" ]; do
-    read -p "Introduzca el nombre del paquete: " nombre_paquete
+    read -p "Introduzca el nombre del paquete: " paquete
 done
 
 mostar_informacion(){
- nombre_paquete="$1"
-apt show "$nombre_paquete"
+ paquete="$1"
+apt-cache show "$paquete"
 }
 
 instalar_paquete() {
-nombre_paquete="$1"
-sudo apt install "$nombre_paquete"
+paquete="$1"
+
+	apt-get install "$paquete"
 }
 
 paquete_instalado() {
-nombre_paquete="$1"
-dpkg -l | grep -w "$nombre_paquete" &> /dev/null
+paquete="$1"
+dpkg -l | grep -w "$paquete" &> /dev/null
 }
 
 if paquete_instalado "$paquete"; then
     echo "El paquete $paquete está instalado."
-    echo "Opciones disponibles:"
     echo "1. Mostrar su versión"
     echo "2. Reinstalarlo"
     echo "3. Actualizarlo (si es actualizable)"
     echo "4. Eliminarlo (guardando la configuración)"
     echo "5. Eliminarlo totalmente"
 
-    read -p "Selecciona una opción (1-5): " opcion
+    read -p "¿Qué quiere hacer con él?: " opcion
 
     case "$opcion" in
         1) mostrar_informacion "$paquete";;
         2) instalar_paquete "$paquete";;
         3) sudo apt upgrade "$paquete";;
-        4) sudo apt remove "$paquete";;
-        5) sudo apt purge "$paquete";;
-        *) echo "Opción no válida.";;
+        4) apt-get remove "$paquete";;
+        5) apt-get purge "$paquete";;
+        *) echo "Opción no disponible";;
     esac
 else
-    resultados=$(apt search "$paquete")
+    resultados=$(apt-cache search "$paquete")
     if [ -z "$resultados" ]; then
-        echo "No se encontró ningún paquete con el nombre \"$paquete\" en los repositorios."
+        echo "Lo siento, \"$paquete\" no se encuentra disponible en lso repositorios."
     else
-        echo "Resultados de búsqueda:"
+        echo "Se han encontrados las siguientes coincidencias con "$paquete": :"
         echo "$resultados"
     fi
 fi
