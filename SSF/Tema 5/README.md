@@ -18,7 +18,7 @@
 
 [5. Canal/Ondas](#ondas)
 
-[6. Cables]
+[6. Cables](#cables)
 
 ## 1. CONEXIONES <a name="conexiones"></a>
 
@@ -70,7 +70,11 @@ No guiada (Inalámbrica)
   
 > Recibe los datos y los pasa a la capa superior
 
-2. Enlace
+2. Enlace de Datos
+
+> capa de enlace: 2 [Subcapas: [LLC: ][MAC: Evita que haya colisiones][DEFINICIONES: [Dominio de colisión: Son los segmentos en los que todos sus dispositivos pueden chocar entre sí][Nodos: Dispositivos de acceso a la red][Trama: Es el nombre que reciben los datos tratados en esta capa][Entramado: Es la información añadida al  mensaje original  (Destinatario y otras mierdas)]]]
+
+Pon lo de arriba bonito, gandúl
 
 > Recibe el mensaje y lo manda directamente al que lo debe recibir  [ LLC ] |  Ordena los mensajes para que no se "superpongan", para que no "hablen" todos a la vez, sino por turnos [ MAC (Middle Acces Contorl) ]
 
@@ -188,7 +192,7 @@ Cambiar la freceuncia
 "Cambiar si sube o baja"
 ```
 
-## CABLES
+## 6. CABLES <a name=cables></a>
 
 1. UTP [Unshielded Twisted Pair]
 
