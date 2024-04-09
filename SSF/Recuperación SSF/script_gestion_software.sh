@@ -59,5 +59,9 @@ else
     else
         echo "Se han encontrados las siguientes coincidencias con $paquete: "
         echo "$resultados"
+	read -p "¿Quiere instalar el paquete? [S/N]: " instalar
+ 	if [[ $instalar == "S" ]]; then
+  	instalar_paquete "$paquete"
+   	fi
     fi
 fi
