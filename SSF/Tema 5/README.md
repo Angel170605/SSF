@@ -20,6 +20,8 @@
 
 [6. Cables](#cables)
 
+[Definiciones](#definiciones)
+
 ## 1. CONEXIONES <a name="conexiones"></a>
 
 ### ¿Cómo viajan las conexiones?
@@ -235,7 +237,7 @@ Tipos de fibra óptica:
 
 </div>
 
-## SIGLAS Y DEFINICIONES:
+## DEFINICIONES: <a name=definiciones></a>
   
 TCP/IP --> "une" Internet (Compueto por muchas redes pequeñas unidas entre sí)
 
