@@ -61,7 +61,13 @@ else
         echo "$resultados"
 	read -p "¿Quiere instalar el paquete? [S/N]: " instalar
  	if [[ $instalar == "S" ]]; then
-  	instalar_paquete "$paquete"
+  	echo "De acuerdo. Iniciando la instalación de $paquete"
+   	instalar_paquete "$paquete"
+ 
+ 	fi
+ 
+   	if [[ $instalar != "N" ]]; then
+    	echo "De acuerdo. $paquete no será instalado"
    	fi
     fi
 fi
