@@ -4,11 +4,9 @@
 
 <img src = "https://www.orbit.es/wp-content/uploads/2019/09/redes-cloud.jpg">
 
-</div>
+
 
 ## CONTENIDOS
-
-<div align="center">
 
 [1. Conexiones](#conexiones)
 
