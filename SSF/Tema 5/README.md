@@ -20,6 +20,8 @@
 
 [6. Cables](#cables)
 
+[Comandos](#comandos)
+
 [Definiciones](#definiciones)
 
 </div>
@@ -82,7 +84,7 @@ No guiada (Inalámbrica)
 
 <div align="center">
 
-## Pon lo de arriba bonito, puto pedazo de vago
+### Pon lo de arriba bonito, puto pedazo de vago
 
 </div>
 
@@ -239,7 +241,15 @@ Tipos de fibra óptica:
 
 </div>
 
-## DEFINICIONES: <a name=definiciones></a>
+## COMANDOS <a name=comandos></a>
+
+## Linux:
+
+ifconfig: Ver dirección de red, y más información.
+
+## Windows:
+
+## DEFINICIONES <a name=definiciones></a>
   
 TCP/IP --> "une" Internet (Compueto por muchas redes pequeñas unidas entre sí)
 
