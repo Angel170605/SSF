@@ -245,9 +245,11 @@ Tipos de fibra óptica:
 
 ## Linux:
 
-ifconfig: Ver dirección de red, y más información.
+- ifconfig: Ver dirección de red, y más información.
 
 ## Windows:
+
+- ipconfig: Ver dirección de red, y más información.
 
 ## DEFINICIONES <a name=definiciones></a>
   
