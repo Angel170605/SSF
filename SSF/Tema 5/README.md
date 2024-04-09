@@ -8,6 +8,8 @@
 
 ## CONTENIDOS
 
+<div align="center">
+
 [1. Conexiones](#conexiones)
 
 [2. Capas OSI](#capasosi)
@@ -21,6 +23,8 @@
 [6. Cables](#cables)
 
 [Definiciones](#definiciones)
+
+</div>
 
 ## 1. CONEXIONES <a name="conexiones"></a>
 
