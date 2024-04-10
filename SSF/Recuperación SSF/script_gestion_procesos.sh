@@ -29,4 +29,4 @@ while true; do
   trap "echo 'Interrumpiendo ejecución'; exit 0" sigint
   trap "echo 'Finalizando ejecución'; exit 0" sigint
   trap "uptime" SIGUSR1
-  trap "uliomit -a" SIGUSR2
+  trap "ulimit -a" SIGUSR2
