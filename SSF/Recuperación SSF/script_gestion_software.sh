@@ -31,7 +31,7 @@ paquete="$1"
 
 paquete_instalado() {
 paquete="$1"
-dpkg -l | grep -w "$paquete" &> /dev/null
+dpkg -l "$paquete" &> /dev/null
 }
 
 if paquete_instalado "$paquete"; then
