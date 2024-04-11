@@ -27,6 +27,8 @@ fi
 while true; do
 
   # Si los argumentos son correctos, el script comprobará que el proceso del sistema que más porcentaje de CPU consume esté por debajo de maxCPU y el proceso del sistema que más porcentaje de memoria consume esté por debajo de maxMem. Esta comprobación se debe repetir cada 30 segundos de forma indefinida.
+
+  
  
   # Si hay algún proceso que supere alguno de estos valores (si son los dos, elegir cualquiera de ellos), se mostrará información de dicho proceso y luego se imprimirá un menú para:
 
@@ -42,3 +44,5 @@ while true; do
   trap "echo 'Finalizando ejecución'; exit 0" sigint
   trap "uptime" SIGUSR1
   trap "ulimit -a" SIGUSR2
+
+  done
