@@ -25,6 +25,18 @@ exit 200
 fi
 
 while true; do
+
+  # Si los argumentos son correctos, el script comprobará que el proceso del sistema que más porcentaje de CPU consume esté por debajo de maxCPU y el proceso del sistema que más porcentaje de memoria consume esté por debajo de maxMem. Esta comprobación se debe repetir cada 30 segundos de forma indefinida.
+ 
+  # Si hay algún proceso que supere alguno de estos valores (si son los dos, elegir cualquiera de ellos), se mostrará información de dicho proceso y luego se imprimirá un menú para:
+
+  # Ignorar el aviso y seguir comprobando
+  # Disminuir en 3 puntos la prioridad del proceso
+  #  Interrumpir el proceso
+  #  Terminar el proceso
+  #  Finalizar inmediatamente el proceso
+  #  Detener el proceso ("congelarlo" de forma evitable)
+  #  Detener el proceso ("congelarlo" de forma INevitable)
   
   trap "echo 'Interrumpiendo ejecución'; exit 0" sigint
   trap "echo 'Finalizando ejecución'; exit 0" sigint
