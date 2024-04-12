@@ -24,14 +24,66 @@ exit 200
 
 fi
 
+maxCPU_actual=$(ps -eo %cpu --sort=-%cpu --no-headers | cut -d '.' -f 1 | head - 1)
+maxMem_actual=$(ps -eo %mem --sort=-%mem --no-headers | cut -d '.' -f 1 )
+
+CPU_PID=$(ps -eo pid --sort=-%cpu --no headers | head -1 )
+Mem_PID=$(ps -eo pid --sort=-%mem --no-headers | head -1 )
+
 while true; do
-
-  # Si los argumentos son correctos, el script comprobará que el proceso del sistema que más porcentaje de CPU consume esté por debajo de maxCPU y el proceso del sistema que más porcentaje de memoria consume esté por debajo de maxMem. Esta comprobación se debe repetir cada 30 segundos de forma indefinida.
-
-  
  
   # Si hay algún proceso que supere alguno de estos valores (si son los dos, elegir cualquiera de ellos), se mostrará información de dicho proceso y luego se imprimirá un menú para:
 
+  if [ "$maxCPU_actual" -gt "$maxCPU"]; then
+    echo "¡Cuidado! El proceso $CPU_PID está consumiendo más recursos de los que su CPU puede dar."
+
+    echo "1. Ignorar el aviso y seguir comprobando"
+    echo "2. Disminuir la prioridad del proceso"
+    echo "3. Interrumpir el proceso"
+    echo "4. Terminar el proceso"
+    echo "5. Finalizar inmediatamente el proceso"
+    echo "6. Detener el proceso (Congelación evitable)"
+    echo "7. Detener el proceso (Congelación Inevitable)"
+    reaqd -p "Por favor, seleccione el número de la medida que desee tomar: " opcion
+  
+    case "$option" in
+      1) break;;
+      2) nice -n -3 $CPU_PID;;
+      3) kill -INT $CPU_PID;;
+      4) kill -TERM $CPU_PID;;
+      5) kill -KILL $CPU_PID;;
+      6) kill -STOP $CPU_PID;;
+      7) kill -TSP $CPU_PID;;
+
+        esac
+      done
+    fi
+  
+  if [ "$maxMem_actual" -gt "$maxMem" ]; then
+    echo "¡Cuidado! El proceso $Mem_PID está consumiendo más memoria de la tiene el sistema"
+
+    echo "1. Ignorar el aviso y seguir comprobando"
+    echo "2. Disminuir la prioridad del proceso"
+    echo "3. Interrumpir el proceso"
+    echo "4. Terminar el proceso"
+    echo "5. Finalizar inmediatamente el proceso"
+    echo "6. Detener el proceso (Congelación evitable)"
+    echo "7. Detener el proceso (Congelación Inevitable)"
+    reaqd -p "Por favor, seleccione el número de la medida que desee tomar: " opcion
+  
+    case "$option" in
+      1) break;;
+      2) nice -n -3 $Mem_PID;;
+      3) kill -INT $Mem_PID;;
+      4) kill -TERM $Mem_PID;;
+      5) kill -KILL $Mem_PID;;
+      6) kill -STOP $Mem_PID;;
+      7) kill -TSP $Mem_PID;;
+
+        esac
+      done
+    fi
+done
   # Ignorar el aviso y seguir comprobando
   # Disminuir en 3 puntos la prioridad del proceso
   #  Interrumpir el proceso
