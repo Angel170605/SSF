@@ -22,10 +22,10 @@ if [ "$?" -eq 4 ]; then
     exit 10
 fi
 
-if [ systemctl is-active $servicio ]; then
+if [ systemctl is-active $servicio == "active" ]; then
   echo "El servicio $servicio está activo."
 
-else
+elif [ systemctl is-active $servicio == "inactive" ]; then
   echo "El servicio $servicio está inactivo."
 
   fi
@@ -40,34 +40,38 @@ elif [ systemctl is-enabled $servicio == "masked"]; then
   echo "El servicio $servicio está enmascarado"
 
   fi
-  
-#Mostrar un menú con las siguientes opciones (van a depender del estado del servicio)
-#Activar el servicio (si estaba inactivo y NO enmascarado. Si estaba ya activo, se ofrecerá la opción de Desactivarlo).
-#Habilitar el servicio (si estaba deshabilitado. Si estaba habilitado, se ofrecerá la opción de Deshabilitarlo).
-#Enmascarar el servicio (si estaba desenmascarado. Si estaba ya enmascarado, se ofrecerá la opción de Desenmascararlo).
 
-echo "¿Qué quiere hacer con el servicio?"
+echo "Tiene las siguientes opciones para la gestión del servicio"
 echo "1. Activar/Descativar el servicio"
 echo "2. Habilitar/Deshabilitar el servicio"
 echo "3. Enmascarar/Desenmascarar el servicio"
 echo "4. Mostrar la configuración del servicio"
 echo "5. Reiniciar el servicio (Dejándolo activo)"
 echo "6. Reiniciar el servicio (Dejándolo en su último estado)"
-echo "7. "
-echo "8. "
-echo "9. "
-echo "10. "
-echo "11. "
+echo "7. Aplicar cambios en la configuración del servicio (Dejándolo en activo)"
+echo "8. Aplicar cambios en la configuración del servicio (En su último estado)"
+echo "9. Asignar la configuración de habilitado/deshabilitado indicada por el desarrollador"
+echo "10. Mostrar el tiempo de carga total del sistema"
+echo "11. Mostrar el nivel actual de ejecución del sistema"
+echo "12. Apagar el equipo"
+echo "13. Reiniciar el equipo"
+echo "14. Salir"
+read -p "Por favor, indique el número de la operación que desea realizar: " opcion
 
-#Mostrar configuración del servicio.
-#Reiniciar el servicio (dejando el servicio activo).
-#Reiniciar el servicio (dejando el servicio en su último estado).
-#Aplicar cambios en la configuración dejando el servicio activo (intentando evitar la interrupción del servicio).
-#Aplicar cambios en la configuración dejando el servicio en su último estado (intentando evitar la interrupción del servicio).
-#Asignar la configuración de habilitado/deshabilitado indicada por el desarrollador (vendor preset).
-#Mostrar el tiempo de carga total del sistema.
-#Mostrar el tiempo de carga de este servicio.
-#Mostrar el nivel de ejecución actual del equipo.
-#Apagar el equipo (usar el comando de control de servicios).
-#Reiniciar el equipo (usar el comando de control de servicios).
-#SALIR
+case $opcion in
+1) if [ systemctl is-active $servicio == "active" ]; then
+    sudo systemctl start $servicio
+    elif [ systemctl is-active $servicio == "desactive" ]; then
+    sudo systemctl stop $servicio
+    fi ;;
+  2) if [ systemctl is-enabled $service == "enabled" ]; then
+      sudo systemctl disable $servicio
+      elif [ systemctl is-enabled $service == "disabled" ]; then
+      sudo systemctl enable $service
+    fi ;;
+    3) if [ systemctl is-enabled $servicio == "masked" ]; then
+    sudo systemctl unmask $servicio
+    else:
+    sudo systemctl mask $servicio
+
+
