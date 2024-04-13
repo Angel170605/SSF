@@ -63,15 +63,46 @@ case $opcion in
     sudo systemctl start $servicio
     elif [ systemctl is-active $servicio == "desactive" ]; then
     sudo systemctl stop $servicio
-    fi ;;
-  2) if [ systemctl is-enabled $service == "enabled" ]; then
+  fi ;;
+  
+2) if [ systemctl is-enabled $service == "enabled" ]; then
       sudo systemctl disable $servicio
       elif [ systemctl is-enabled $service == "disabled" ]; then
       sudo systemctl enable $service
     fi ;;
-    3) if [ systemctl is-enabled $servicio == "masked" ]; then
-    sudo systemctl unmask $servicio
-    else:
-    sudo systemctl mask $servicio
+    
+3) if [ systemctl is-enabled $servicio == "masked" ]; then
+      sudo systemctl unmask $servicio
+      else:
+      sudo systemctl mask $servicio
+    fi ;;
+    
+4) systemctl show $servicio ;;
 
+5) sudo systemctl restart $servicio ;;
 
+6) sudo systemctl try-restart $servicio ;;
+
+7) sudo systemctl reload-or-restart $servicio ;;
+
+8) sudo systemctl try-reload-or-restart $servicio ;;
+
+9) systemd-analyze time ;;
+
+10) echo "El tiempo de carga de $servicio es (systemd-analyze blame | grep "$svc_name" | tr -s " " | cut -d " " -f 2)" ;;
+
+11) echo "El nivel de ejecucuión actual del sistema es " runlevel ;;
+
+12) echo "Apagando el sistema..."
+sleep 5
+ sudo systemctl isolate runlevel0.target
+ ;;
+
+ 13) echo "Reiniciando el sistema..."
+ sudo systemctl isolate runlevel6.target
+ ;;
+
+ 14) "¡Hasta la próxima!" 
+ exit 0 ;;
+ esac
+done
