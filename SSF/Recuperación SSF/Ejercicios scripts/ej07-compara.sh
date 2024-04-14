@@ -12,7 +12,7 @@
 
 num1=$1
 num2=$2
-if [ -z "$num1 ]; then
+if [ -z "$num1" ]; then
     read -p "Por favor, introduzca el primer valor a comparar: " num1
 fi
 
