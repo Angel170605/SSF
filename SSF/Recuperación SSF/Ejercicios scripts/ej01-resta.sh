@@ -11,7 +11,7 @@
 ########################################
 
 if [ "$# -ne 2" ]; then
-    echo "Error. Debe indicar dos valores"
+    echo "Error. Debe indicar dos valores."
     exit
 fi
 
