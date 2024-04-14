@@ -12,7 +12,7 @@
 
 if [ "$# -ne 2" ]; then
     echo "Error. Debe indicar dos valores."
-    exit
+    read -p "Por favor, indíquelos a continuación: "
 fi
 
 num1=$1
