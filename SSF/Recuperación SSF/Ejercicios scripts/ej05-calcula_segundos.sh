@@ -10,9 +10,21 @@
 #
 ########################################
 
-if [ $# -ne 4 ]; then
+if [ -z $dias ]; then
     echo "Error. Debe indicar 4 argumentos (dias, horas, minustos, segundos)"
-    read -p "Por favor, indíquelos a continuación" dias horas minutos segundos
+    read -p "Por favor, indíque el numero de dias: " dias
+fi
+if [ -z $horas ]; then
+    echo "Error. Debe indicar 4 argumentos (dias, horas, minustos, segundos)"
+    read -p "Por favor, indíque el numero de horas: " horas
+fi
+if [ -z $minutos ]; then
+    echo "Error. Debe indicar 4 argumentos (dias, horas, minustos, segundos)"
+    read -p "Por favor, indíque el numero de minutos: " minutos
+fi
+if [ -z $segundos ]; then
+    echo "Error. Debe indicar 4 argumentos (dias, horas, minustos, segundos)"
+    read -p "Por favor, indíque el numero de segundos: " segundos
 fi
 
 dias=$1
