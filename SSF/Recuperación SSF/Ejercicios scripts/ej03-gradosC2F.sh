@@ -12,7 +12,7 @@
 
 if [ $# -ne 1 ]; then
     echo "Error. Debe indicar una temperatura en grados Celsius."
-    exit
+    read -p "Por favor, indíquela a continuación: "
 fi
 
 c=$1
