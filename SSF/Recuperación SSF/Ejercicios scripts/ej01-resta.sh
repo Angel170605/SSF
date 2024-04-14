@@ -10,9 +10,14 @@
 #
 ########################################
 
-if [ "$# -ne 2" ]; then
+if [ -z "$num1" ]; then
     echo "Error. Debe indicar dos valores."
-    read -p "Por favor, indíquelos a continuación: " num1 num2
+    read -p "Por favor, indíque el primer valor: " num1
+fi
+
+if [ -z "$num2" ]; then
+    echo "Error. Debe indicar dos valores."
+    read -p "Por favor, indique el segundo valor: " num2
 fi
 
 num1=$1
