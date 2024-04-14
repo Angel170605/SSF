@@ -12,7 +12,7 @@
 
 if [ $# -ne 4 ]; then
     echo "Error. Debe indicar 4 argumentos (dias, horas, minustos, segundos)"
-    exit
+    read -p "Por favor, indíquelos a continuación" dias horas minutos segundos
 fi
 
 dias=$1
