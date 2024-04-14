@@ -37,7 +37,7 @@ echo "$num1 - $num2 = $((num1-num2))" ;;
 3 | "Multiplica" | "multiplica" )
 echo "$num1 * $num2 = $((num1*num2))" ;;
 4 | "Divide" | "divide" )
-echo "$num1 / $num2 = $((num1/num2)" ;;
+echo "$num1 / $num2 = $((num1/num2))" ;;
 5 | "Eleva" | "eleva" )
 echo "$num1 ^ $num2 = $((num1**num2))" ;;
 6 | "Media" | "media" )
