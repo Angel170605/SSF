@@ -72,39 +72,92 @@ No guiada (Inalámbrica)
 
 ### Capas:
 
-1. Física
+### 1. Física
   
-> Recibe los datos y los pasa a la capa superior
+Recibe los datos y los pasa a la capa superior
 
-2. Enlace de Datos
+### 2. Enlace de Datos
 
-> capa de enlace: 2 [Subcapas: [LLC: ][MAC: Evita que haya colisiones][DEFINICIONES: [Dominio de colisión: Son los segmentos en los que todos sus dispositivos pueden chocar entre sí][Nodos: Dispositivos de acceso a la red][Trama: Es el nombre que reciben los datos tratados en esta capa][Entramado: Es la información añadida al  mensaje original  (Destinatario y otras mierdas)][[Unicast: Envía el mensaje dispositivo a dispositivo][BROADCAST: Enviar mensaje a todos los dispositivos][Multicast: Envia el mensaje a algunos si y otros no]]]]
+- 2 Subcapas:
 
-> Recibe el mensaje y lo manda directamente al que lo debe recibir  [ LLC ] |  Ordena los mensajes para que no se "superpongan", para que no "hablen" todos a la vez, sino por turnos [ MAC (Middle Acces Contorl) ]
+    - LLC: Recibe el mensaje y lo manda directamente al que lo debe recibir
+    
+    - MAC [Middle Control Acces] : Evita que haya colisiones
+  
+  - Dominio de colisión: Son los segmentos en los que todos sus dispositivos pueden chocar entre sí
+  
+  - Nodos: Dispositivos de acceso a la red
 
-<div align="center">
+  - Trama: Es el nombre que reciben los datos tratados en esta capa
 
-### Pon lo de arriba bonito, puto pedazo de vago
+  - Entramado: Es la información añadida al  mensaje original (Destinatario y otras cosas)
 
-</div>
+  - Unicast: Envía el mensaje dispositivo a dispositivo
+  
+  - BROADCAST: Enviar mensaje a todos los dispositivos
 
-3. Red
+  - Multicast: Envia el mensaje a algunos si y otros no
+
+
+### 3. Red
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
-4. Transporte
+IP: 
+
+- Compuesta por:
+
+    - Red
+ 
+    - Host
+ 
+  - Clases:
+
+    - Clase A: 0 - 127
+ 
+    - Clase B: 128 - 191
+ 
+    - Clase C: 192 - 224
+ 
+    - Experimentales ( Reservadas para el futuro | Restringidas, no se la puedes asignar a un equipo ):
+ 
+      - Clase D: 224 - 239
+     
+      - Clase E: 240 - 255
+ 
+  - Se separa la Red del Host según la clase [ A | B | C | D ]
+ 
+    ```
+    EJEMPLO:
+
+     A  B  C  D
+
+    177.100.18.05 -> Clase B -> | RED: 177.100 | HOST: 18.05 |
+
+    119.18.45.0 -> Clase A -> | RED: 119 | HOST: 18.45.0 |
+
+    160.220.024.12 -> Clase B -> | RED: 160 | HOST: 220.024.12 |
+    ```
+
+- 4 dígitos
+
+- NO hay núemros negativos
+
+- Los números que la componen NO pueden superar el 255
+
+### 4. Transporte
 
 > Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino
 
-5. Sesión
+### 5. Sesión
 
 > Verifica que el destino está activo/en linea
 
-6. Presentación
+### 6. Presentación
 
 > Codifica los mensajes, se encarga de ver en qué formato van los archivos, el lenguaje de codificación (UTF-8, etc.), etc.
 
-7. Aplicación
+### 7. Aplicación
 
 ## 3. CLASIFICACIÓN DE REDES <a name="clasificacionderedes"></a>
 
