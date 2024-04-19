@@ -103,47 +103,61 @@ Recibe los datos y los pasa a la capa superior
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
-IP: 
-
-- Compuesta por:
-
-    - Red
+  IP: 
+  
+  - Compuesta por:
+  
+      - Red
+   
+      - Host
+   
+    #### Clases:
+  
+      - Clase A: 0 - 127
+    
+      - Clase B: 128 - 191 
  
-    - Host
+      - Clase C: 192 - 224
  
-  - Clases:
-
-    - Clase A: 0 - 127
+      - Experimentales ( Reservadas para el futuro | Restringidas, no se la puedes asignar a un equipo ):
  
-    - Clase B: 128 - 191
- 
-    - Clase C: 192 - 224
- 
-    - Experimentales ( Reservadas para el futuro | Restringidas, no se la puedes asignar a un equipo ):
- 
-      - Clase D: 224 - 239
+        - Clase D: 224 - 239
      
-      - Clase E: 240 - 255
+        - Clase E: 240 - 255
  
-  - Se separa la Red del Host según la clase [ A | B | C | D ]
+    - Se separa la Red del Host según la clase [ A | B | C | D ]
  
-    ```
-    EJEMPLO:
+      ```
+      EJEMPLO:
+  
+       A  B  C  D
 
-     A  B  C  D
+      177.100.18.05 -> Clase B -> | RED: 177.100 | HOST: 18.05 |
 
-    177.100.18.05 -> Clase B -> | RED: 177.100 | HOST: 18.05 |
+      119.18.45.0 -> Clase A -> | RED: 119 | HOST: 18.45.0 |
 
-    119.18.45.0 -> Clase A -> | RED: 119 | HOST: 18.45.0 |
+      160.220.024.12 -> Clase B -> | RED: 160 | HOST: 220.024.12 |
+      ```
 
-    160.220.024.12 -> Clase B -> | RED: 160 | HOST: 220.024.12 |
-    ```
+  - 4 dígitos
 
-- 4 dígitos
+  - NO hay núemros negativos
 
-- NO hay núemros negativos
+  - Los números que la componen NO pueden superar el 255
 
-- Los números que la componen NO pueden superar el 255
+Máscaras de Red:
+
+  ```
+  Clase A: 121.31.53.8
+    Máscara: 255.0.0.0
+  
+  Clase B: 172.24.108.3
+    Máscara 255.255.0.0  
+
+  Clase C: 192.168.4.20
+    Máscara: 255.255.255.0
+
+  ```
 
 ### 4. Transporte
 
