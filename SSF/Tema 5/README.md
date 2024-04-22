@@ -104,7 +104,17 @@ Recibe los datos y los pasa a la capa superior
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
   IP: 
-  
+
+  - Estáticas o dinámicas (Lo decide el que la configure)
+
+  - Públicas o privadas
+
+  - 4 dígitos
+
+  - NO hay núemros negativos
+
+  - Los números que la componen NO pueden superar el 255
+    
   - Compuesta por:
   
       - Red
@@ -125,7 +135,7 @@ Recibe los datos y los pasa a la capa superior
      
         - Clase E: 240 - 255
  
-    - Se separa la Red del Host según la clase [ A | B | C | D ]
+- Se separa la Red del Host según la clase [ A | B | C | D ]
  
       ```
       EJEMPLO:
@@ -138,16 +148,17 @@ Recibe los datos y los pasa a la capa superior
 
       160.220.024.12 -> Clase B -> | RED: 160 | HOST: 220.024.12 |
       ```
+- Para saber si es pública o privada:
 
-  - 4 dígitos
+    ```
+    La IP privadas empiezan por 10, 172 o 192; aunque pueden existir IPs públicas que empiecen tanto por 172 como por 192
+    ```
 
-  - NO hay núemros negativos
-
-  - Los números que la componen NO pueden superar el 255
-
-Máscaras de Red:
+- Máscaras de Red:
 
   ```
+  EJEMPLO  
+
   Clase A: 121.31.53.8
     Máscara: 255.0.0.0
   
@@ -157,6 +168,28 @@ Máscaras de Red:
   Clase C: 192.168.4.20
     Máscara: 255.255.255.0
 
+  ```
+
+- CIDR (Class-less Inter Domain Routing) 
+
+> Número de 1 consecutivos que tiene una máscara de capa
+
+  ```
+  EJEMPLO  
+
+  Clase A: 121.31.53.8
+    Máscara: 255.0.0.0
+      CIDR: /8
+
+  Clase B: 172.24.108.3
+    Máscara 255.255.0.0  
+      CIDR: /16
+
+  Clase C: 192.168.4.20
+    Máscara: 255.255.255.0
+      CIDR: /24
+
+  El corte estará en el bit nº CIDR, en el número convertido a binario.
   ```
 
 ### 4. Transporte
