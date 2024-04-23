@@ -100,7 +100,7 @@ Recibe los datos y los pasa a la capa superior
  
   - Switch -> Une la **misma** red.
  
-  - Router -> Une las **distintas** redes. ( Pertenece a la red 3 )
+  - Router -> Une las **distintas** redes. ( Pertenece a la Capa 3: Red )
 
 
 ### 3. Red
