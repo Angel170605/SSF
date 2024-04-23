@@ -82,7 +82,8 @@ No guiada (Inalámbrica)
   
 Recibe los datos y los pasa a la capa superior
 
-> Hola Ángel del futuro; ACTUALIZA ESTO, PEDAZO DE GANDÚL
+> Hola Ángel del futuro; COMPLETA ESTE APARTADO, PEDAZO DE GANDÚL
+
 > pd: Jamón.
 
 ### 2. Enlace de Datos <a name="enlacededatos"></a>
