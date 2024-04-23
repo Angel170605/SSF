@@ -5,6 +5,7 @@
 <img src = "https://www.orbit.es/wp-content/uploads/2019/09/redes-cloud.jpg">
 
 
+</div>
 
 ## CONTENIDOS
 
@@ -13,6 +14,12 @@
 [2. Capas OSI](#capasosi)
 
 [3. Clasificación de redes](#clasificacionderedes)
+
+  [3.1 CAPA Física](#capafisica)
+
+  [3.2 ENLACE DE DATOS](#enlacededatos)
+
+  [3.3 RED](#capadered)
 
 [4. Topología de la red](#topologiadelared)
 
@@ -24,7 +31,6 @@
 
 [Definiciones](#definiciones)
 
-</div>
 
 ## 1. CONEXIONES <a name="conexiones"></a>
 
@@ -72,11 +78,11 @@ No guiada (Inalámbrica)
 
 ### Capas:
 
-### 1. Física
+### 1. Capa física <a name="capafisica"></a>
   
 Recibe los datos y los pasa a la capa superior
 
-### 2. Enlace de Datos
+### 2. Enlace de Datos <a name="enlacededatos"></a>
 
 - 2 Subcapas:
 
@@ -103,7 +109,7 @@ Recibe los datos y los pasa a la capa superior
   - Router -> Une las **distintas** redes. ( Pertenece a la Capa 3: Red )
 
 
-### 3. Red
+### 3. Red <a name="capadered"></a>
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
