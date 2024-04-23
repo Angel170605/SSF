@@ -15,11 +15,11 @@
 
 [3. Clasificación de redes](#clasificacionderedes)
 
-  [3.1 CAPA Física](#capafisica)
+> [3.1 CAPA Física](#capafisica)
 
-  [3.2 ENLACE DE DATOS](#enlacededatos)
+> [3.2 ENLACE DE DATOS](#enlacededatos)
 
-  [3.3 RED](#capadered)
+> [3.3 RED](#capadered)
 
 [4. Topología de la red](#topologiadelared)
 
