@@ -15,11 +15,11 @@
 
 [3. Clasificación de redes](#clasificacionderedes)
 
-> [3.1 CAPA Física](#capafisica)
+> [3.1 Capa Física](#capafisica)
 
-> [3.2 ENLACE DE DATOS](#enlacededatos)
+> [3.2 Enlace DE DATOS](#enlacededatos)
 
-> [3.3 RED](#capadered)
+> [3.3 Red](#capadered)
 
 [4. Topología de la red](#topologiadelared)
 
@@ -81,6 +81,9 @@ No guiada (Inalámbrica)
 ### 1. Capa física <a name="capafisica"></a>
   
 Recibe los datos y los pasa a la capa superior
+
+> Hola Ángel del futuro; ACTUALIZA ESTO, PEDAZO DE GANDÚL
+> pd: Jamón.
 
 ### 2. Enlace de Datos <a name="enlacededatos"></a>
 
