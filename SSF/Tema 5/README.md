@@ -198,6 +198,30 @@ Recibe los datos y los pasa a la capa superior
   El corte estará en el bit nº CIDR, en el número convertido a binario.
   ```
 
+#### EJERCICIO DE REDES OFICINA ( EJERCICIO 12, CAE EN EL EXAMEN ): 
+
+- Se identifican los routers ( R1, R2, R3...)
+
+- También se identifican las redes ( Unidas por routers).
+
+    - Es en sentido horario, de forma que se nombrarán ( eth0, eth1, eth2...etc) primero hacia arriba, luego hacia la izqd, abajo y drch.
+ 
+    - La conexión entre los routers e Internet se llama ppp0 ( Aunque no sea común, pueden haber más: ppp1, ppp2, ppp3...etc)
+ 
+    -   Nombres de las subredes: Nombre del router + Nombre de la red -> **R**n**eth**n.
+ 
+      ```
+      EJEMPLO
+                  PC3 ( 30 redes )          PC2 ( 15 redes)            Servidores
+                          |                        |                       |  
+                          |                        | eth2                  | eth0
+                          |                        |                       |
+                      [ SWIFT ] - - - eth4 - - - ( R2 ) - - - eth1 - - - ( R1 ) 
+                          |                        |                       |
+                          |                        | eth3                  | ppp0
+                          |                        |                       |
+                  PC4 ( 20 redes)           PC2 ( 40 redes )           Internet
+      ```
 ### 4. Transporte
 
 > Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino
