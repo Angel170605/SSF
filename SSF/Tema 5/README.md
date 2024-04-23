@@ -97,6 +97,10 @@ Recibe los datos y los pasa a la capa superior
   - BROADCAST: Enviar mensaje a todos los dispositivos
 
   - Multicast: Envia el mensaje a algunos si y otros no
+ 
+  - Switch -> Une la **misma** red.
+ 
+  - Router -> Une las **distintas** redes. ( Pertenece a la red 3 )
 
 
 ### 3. Red
@@ -112,6 +116,8 @@ Recibe los datos y los pasa a la capa superior
   - 4 dígitos
 
   - NO hay núemros negativos
+
+  - Cuantos mas equipos hayan, mayor será la red; de tal forma que se irán nombrando como S1, S2, S3... en un orden de mayor a menor.
 
   - Los números que la componen NO pueden superar el 255
     
