@@ -90,23 +90,23 @@ Recibe los datos y los pasa a la capa superior
 
 - 2 Subcapas:
 
-    - LLC: Recibe el mensaje y lo manda directamente al que lo debe recibir
+    - LLC -> Recibe el mensaje y lo manda directamente al que lo debe recibir
     
-    - MAC [Middle Control Acces] : Evita que haya colisiones
+    - MAC ( Middle Control Acces ) -> Evita que haya colisiones
   
-  - Dominio de colisión: Son los segmentos en los que todos sus dispositivos pueden chocar entre sí
+  - Dominio de colisión -> Son los segmentos en los que todos sus dispositivos pueden chocar entre sí
   
-  - Nodos: Dispositivos de acceso a la red
+  - Nodos -> Dispositivos de acceso a la red
 
-  - Trama: Es el nombre que reciben los datos tratados en esta capa
+  - Trama -> Es el nombre que reciben los datos tratados en esta capa
 
-  - Entramado: Es la información añadida al  mensaje original (Destinatario y otras cosas)
+  - Entramado -> Es la información añadida al  mensaje original (Destinatario y otras cosas)
 
-  - Unicast: Envía el mensaje dispositivo a dispositivo
+  - Unicast -> Envía el mensaje dispositivo a dispositivo
   
-  - BROADCAST: Enviar mensaje a todos los dispositivos
+  - BROADCAST -> Enviar mensaje a todos los dispositivos
 
-  - Multicast: Envia el mensaje a algunos si y otros no
+  - Multicast -> Envia el mensaje a algunos si y otros no
  
   - Switch -> Une la **misma** red.
  
@@ -130,6 +130,8 @@ Recibe los datos y los pasa a la capa superior
   - Cuantos mas equipos hayan, mayor será la red; de tal forma que se irán nombrando como S1, S2, S3... en un orden de mayor a menor.
 
   - Los números que la componen NO pueden superar el 255
+
+  - Protocolo Apipa ( Automatic Private Internet Protocol Addressing ): Cuando no podemos obtener una IP válida, nos inventamos una dentro de un rango específico. No funcionará a nivel interno; pero sí a nivel externo.
     
   - Compuesta por:
   
@@ -386,6 +388,10 @@ Tipos de fibra óptica:
 
 - ifconfig: Ver dirección de red, y más información.
 
+- route: Ver redes.
+
+- route -n: Ver puertos, redes y esas cosas bien exóticas.
+
 ## Windows:
 
 - ipconfig: Ver dirección de red, y más información.
@@ -398,6 +404,7 @@ Bits --> Datos a nivel físico
 
 Transductor de entrada --> Convierte cualquier fenómeno físico que se quiera transmitir en electricidad.
 
+Guayabo -> Árbol de América, de la familia de las mirtáceas, que crece hasta cinco o seis metros de altura, con tronco torcido y ramoso, hojas elípticas, puntiagudas, ásperas y gruesas, flores blancas, olorosas, axilares, de muchos pétalos redondeados, y cuyo fruto es la guayaba.
 
 Galga -> AWG [Medida de gorsor de los cables]
 
