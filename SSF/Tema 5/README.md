@@ -111,6 +111,8 @@ Recibe los datos y los pasa a la capa superior
   - Switch -> Une la **misma** red.
  
   - Router -> Une las **distintas** redes. ( Pertenece a la Capa 3: Red )
+ 
+  - IFG -> Interframe Gap
 
 
 ### 3. Red <a name="capadered"></a>
