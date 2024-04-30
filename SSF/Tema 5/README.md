@@ -236,6 +236,29 @@ Recibe los datos y los pasa a la capa superior
                           |                        |                       |
                   PC4 ( 20 redes)           PC2 ( 40 redes )           Internet
       ```
+
+    - Campos diagrama IP:
+
+      - VERS: Versión del protocolo IP usado para crear el datagrama.
+      - HLEN: Longitud del Header.
+      - Tipo de Servicio:
+            - Prioridad (3 bits): Va desde 0 (*Baja prioridad*) hasta 7 (*Alta prioridad*)
+            - Bit D (*Delay*)
+            - Bit T ()
+            - Bit R ()
+      - Longitud Total
+      - Identificación: Nº de secuencia, dirección de origen y destino, y protocolo usado
+      - Banderas
+      - Desesplazamientos de fragmentación
+      - Tiempo de vida
+      - Protocolo
+      - CRC () Cabecera: Contiene la suma de los cálculos de la comprobación de errores de la cabecera del datagrama.
+      - Dirección de Origen
+      - Dirección de destino
+      - Opciones IP: No es obligatorio y especifica las opciones solicitadas por el usuario que realiza el envío
+      - Relleno
+      - Datos
+
 ### 4. Transporte
 
 > Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino
@@ -390,10 +413,15 @@ Tipos de fibra óptica:
 
 - ifconfig: Ver dirección de red, y más información.
 
-- route: Ver redes.
+- ping: muestra información sobre una red, como la IP
+
+- route: Ver las tablas de ruteo.
 
 - route -n: Ver puertos, redes y esas cosas bien exóticas.
 
+- traceroute: Permite ver por dónde pasan los paquetes y modificarlos. Lo usan generalmente los administradores.
+  
+- traceroute [dirección url (www.holasoyunejemplo.com)]: Muestra todos los saltos necesarios para llegar a la url especificada.
 ## Windows:
 
 - ipconfig: Ver dirección de red, y más información.
@@ -413,5 +441,7 @@ Galga -> AWG [Medida de gorsor de los cables]
 > Cuanto menor es el número, más fino será el cable [Ej: AWG 22 es más delgado que AWG 14]
 
 Transmisor --> Prepara dicha electricidad para que pueda viajar por el cable. **corregir
+
+MTU -> Maxim Transfer Unit
 
 
