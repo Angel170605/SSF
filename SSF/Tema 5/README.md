@@ -415,9 +415,9 @@ Tipos de fibra óptica:
 
 - ping: muestra información sobre una red, como la IP
 
-- route: Ver las tablas de ruteo.
+- route: Ver las tablas de ruteo bien exóticas.
 
-- route -n: Ver puertos, redes y esas cosas bien exóticas.
+- route -n: Mide con métricas bien insanotas.
 
 - traceroute: Permite ver por dónde pasan los paquetes y modificarlos. Lo usan generalmente los administradores.
   
