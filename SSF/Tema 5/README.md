@@ -79,14 +79,14 @@ No guiada (Inalámbrica)
 ### Capas:
 
 ### 1. Capa física <a name="capafisica"></a>
-  
+
+#### Gran aportación: Envío de mensajes
+
 Recibe los datos y los pasa a la capa superior
 
-> Hola Ángel del futuro; COMPLETA ESTE APARTADO, PEDAZO DE GANDÚL
-
-> pd: Jamón.
-
 ### 2. Enlace de Datos <a name="enlacededatos"></a>
+
+#### Gran aportación: Dirección MAC
 
 - 2 Subcapas:
 
@@ -116,6 +116,8 @@ Recibe los datos y los pasa a la capa superior
 
 
 ### 3. Red <a name="capadered"></a>
+
+#### Gran aportación: IP
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
@@ -261,7 +263,29 @@ Recibe los datos y los pasa a la capa superior
 
 ### 4. Transporte
 
-> Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino
+#### Gran aportación: Puertos
+
+> Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino.
+
+- Podemos usar muchas apps y cosas con un sólo cable.
+
+- Segmentación: Trocea y manda los archivos en cachitos cuyo tamaño es el MTU (Máximo tamaño que soporta la capa inferior)
+
+- Reensanblamiento de segmentos.
+
+- Puertos:
+
+  -  Hay 2¹⁶ puertos (65535).
+ 
+  -  Puerto 80 'por defecto':
+
+      - Más fácil acceso: Normalmente suelen buscar este
+   
+      - Al igual que en términos de acceso, suele ser el primero al que intentan atacar.
+   
+  - Protocolo más importante: TCP:
+ 
+      - Desventaja: Sólo enviará a la aplicación los datos que sean exactamente igual a los que envió origen. ¿Que le falta un bit? nada; a casa socio. Son los códigos de la red, es lo que hay.
 
 ### 5. Sesión
 
