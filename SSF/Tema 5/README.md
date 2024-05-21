@@ -287,6 +287,15 @@ Recibe los datos y los pasa a la capa superior
  
       - Desventaja: Sólo enviará a la aplicación los datos que sean exactamente igual a los que envió origen. ¿Que le falta un bit? nada; a casa socio. Son los códigos de la red, es lo que hay.
 
+  - Protocolo UTCP: (Tenso)
+ 
+
+  Puertos exóticos:
+
+    - 789: Puerto que usa Epoptes
+    - 443: Conexiones encriptadas
+    - 
+
 ### 5. Sesión
 
 > Verifica que el destino está activo/en linea
@@ -446,6 +455,9 @@ Tipos de fibra óptica:
 - traceroute: Permite ver por dónde pasan los paquetes y modificarlos. Lo usan generalmente los administradores.
   
 - traceroute [dirección url (www.holasoyunejemplo.com)]: Muestra todos los saltos necesarios para llegar a la url especificada.
+
+- netstat: Ver rutas de red y cosas exóticas
+
 ## Windows:
 
 - ipconfig: Ver dirección de red, y más información.
@@ -461,6 +473,8 @@ Transductor de entrada --> Convierte cualquier fenómeno físico que se quiera t
 Guayabo -> Árbol de América, de la familia de las mirtáceas, que crece hasta cinco o seis metros de altura, con tronco torcido y ramoso, hojas elípticas, puntiagudas, ásperas y gruesas, flores blancas, olorosas, axilares, de muchos pétalos redondeados, y cuyo fruto es la guayaba.
 
 Galga -> AWG [Medida de gorsor de los cables]
+
+DND -> Domain Name System
 
 > Cuanto menor es el número, más fino será el cable [Ej: AWG 22 es más delgado que AWG 14]
 
