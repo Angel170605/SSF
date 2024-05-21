@@ -271,7 +271,7 @@ Cacharros: Router (Realmente realmente, capa 3/4), Firewall (Realmente realmente
 
 #### Gran aportación: Puertos
 
-Cacharros: 
+Cacharros: ª
 
 > Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino.
 
