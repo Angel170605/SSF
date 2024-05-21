@@ -82,11 +82,15 @@ No guiada (Inalámbrica)
 
 #### Gran aportación: Envío de mensajes
 
+Cacharros: Hub, repetidores, ONT, modem (señal a )
+
 Recibe los datos y los pasa a la capa superior
 
 ### 2. Enlace de Datos <a name="enlacededatos"></a>
 
 #### Gran aportación: Dirección MAC
+
+Cacharros: Switch, Bridge, AP (Bridge muy especial)
 
 - 2 Subcapas:
 
@@ -118,6 +122,8 @@ Recibe los datos y los pasa a la capa superior
 ### 3. Red <a name="capadered"></a>
 
 #### Gran aportación: IP
+
+Cacharros: Router (Realmente realmente, capa 3/4), Firewall (Realmente realmente, capa 3/4)
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
@@ -264,6 +270,8 @@ Recibe los datos y los pasa a la capa superior
 ### 4. Transporte
 
 #### Gran aportación: Puertos
+
+Cacharros: 
 
 > Supervisa que los mensajes lleguen a la capa de red, y si no lo hacen, los solicita de nuevo | "Corta" el paquete en pequeños paquetitos, que luego serán juntados de nuevo en el paquete por la capa Transporte del destino.
 
