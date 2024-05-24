@@ -74,7 +74,7 @@ No guiada (Inalámbrica)
 
 - 7 capas independientes
 
-- Clasistas/Racistas/Machistas/Xenófobos ( Sólo hablan con sus iguales )
+- Clasistas/Racistas/Machistas/Xenófobas ( Sólo hablan con sus iguales )
 
 ### Capas:
 
@@ -82,7 +82,7 @@ No guiada (Inalámbrica)
 
 #### Gran aportación: Envío de mensajes
 
-Cacharros: Hub, repetidores, ONT, modem (señal a )
+Cacharros: Hub | Repetidores | ONT | Modem (señal a )
 
 Recibe los datos y los pasa a la capa superior
 
@@ -123,7 +123,7 @@ Cacharros: Switch, Bridge, AP (Bridge muy especial)
 
 #### Gran aportación: IP
 
-Cacharros: Router (Realmente realmente, capa 3/4), Firewall (Realmente realmente, capa 3/4)
+Cacharros: Router (Realmente realmente, capa 3/4) | Firewall (Realmente realmente, capa 3/4)
 
 > Intentará mediante todos los medios que el mensaje llegue a la siguiente capa; busca el mejor camino a través de la Red.
 
@@ -308,11 +308,46 @@ Cacharros: ª
 
 > Verifica que el destino está activo/en linea
 
+Cacharros: No hay :(
+
 ### 6. Presentación
 
 > Codifica los mensajes, se encarga de ver en qué formato van los archivos, el lenguaje de codificación (UTF-8, etc.), etc.
 
+Cacharros: No hay :(
+
 ### 7. Aplicación
+
+Cacharros: Servidores (Manejan información y contenido) | Proxy (Intermediario que rompe la conexión directa y da el anonimato)
+
+Protocolos:
+
+- Funciones:
+    - Servidor web
+
+- Servidores:
+  - DNS TCP/UDP -> | Puertor: 53 |
+  - Telnet -> 80
+  - E-mail -> | Puertos: Jamón |
+  - DHCP (Dynamic Host Configuration Protocol) -> UDP | Puertos: 67 servidor | 68 clientes
+  - Web: https -> 443
+  - FTP (File Transport Protocol): Servidores exclusivos para descargar -> | Puertos: 20 | 21
+  - SMTP (Simple Mail Transfer Protocol) -> | Puertos: 25 mensajes sin cifrar | 587 mensajes cifrados.
+ 
+
+- PARTES DE LA URL:
+
+    https -> esquema
+
+    udc.com -> Dominio
+                        
+    433 -> Puerto (No se suele poner)
+
+    principal/historia -> ruta
+
+    tumbalo=mich -> parametros
+
+    \# hola -> "índice"
 
 ## 3. CLASIFICACIÓN DE REDES <a name="clasificacionderedes"></a>
 
@@ -489,5 +524,6 @@ DND -> Domain Name System
 Transmisor --> Prepara dicha electricidad para que pueda viajar por el cable. **corregir
 
 MTU -> Maxim Transfer Unit
+NTP -> Network Type Protocol
 
 
